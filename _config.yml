@@ -18,7 +18,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: EOESHIP
 email: hello@eoeship.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -26,27 +25,38 @@ twitter_username: eoeship
 facebook_username: eoeship
 github_username: eoeship
 
-exclude: [ 'README.md','src','package.json','package-lock.json','tailwind.config.js','webpack.mix.js' ]
+permalink: /:categories/:title:output_ext
+
 # Build settings
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  # Exclude from processing.
+  # The following items will not be processed, by default.
+  # Any item listed under the `exclude:` key here will be automatically added to
+  # the internal "default list".
+  #
+  # Excluded items can be processed by explicitly listing the directories or
+  # their entries' file path in the `include:` list.
+  #
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md,
+  - src/
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - webpack.mix.js
+  - .git/
+  - .idea/
+  - .vscode/
+  - mix-manifest.json
