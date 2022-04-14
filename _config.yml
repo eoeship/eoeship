@@ -21,9 +21,14 @@
 email: hello@eoeship.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: eoeship
-facebook_username: eoeship
-github_username: eoeship
+
+telegram:
+twitter: eoeship
+facebook: eoeship
+instagram:
+pinterest:
+youtube:
+github: eoeship
 
 permalink: /blog/:categories/:title:output_ext
 
