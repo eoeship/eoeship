@@ -1,0 +1,7 @@
+- code: en
+  name: English
+  url: /
+
+- code: zh_CN
+  name: 简体中文
+  url: /zh_CN

@@ -25,11 +25,18 @@ twitter_username: eoeship
 facebook_username: eoeship
 github_username: eoeship
 
-permalink: /:categories/:title:output_ext
+permalink: /blog/:categories/:title:output_ext
+
+# Multiple languages
+
+languages: [ "en","zh_CN" ]
+exclude_from_localizations: [ "js","src","css","images","fonts" ]
 
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-multiple-languages-plugin
+  - jekyll-sitemap
 
   # Exclude from processing.
   # The following items will not be processed, by default.
@@ -60,3 +67,6 @@ exclude:
   - .idea/
   - .vscode/
   - mix-manifest.json
+  - .github
+  - .travis.yml
+  - .gitignore
