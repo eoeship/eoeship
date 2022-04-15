@@ -1,2 +1,7 @@
 site:
+  lang_name: English
+  home: /
   description:
+
+navigation:
+  home: Home

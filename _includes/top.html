@@ -1,18 +1,13 @@
-<div class="bg-neutral-50 py-1 px-4">
-    <div class="max-w-7xl mx-auto flex justify-between">
+<div class="bg-neutral-50 py-1">
+    <div class="max-w-7xl mx-auto px-2 flex justify-between">
         <div class="space-x-2">
             {% include social.html %}
         </div>
         <div class="text-neutral-500 relative" x-data="{show:false}">
             <div class="space-x-1">
                 <i class="fas fa-globe"></i>
-                {% for lang in site.data.languages %}
-                {% if(lang.code == site.lang )%}
-                {% assign lang_name = lang.name %}
-                {% endif %}
-                {% endfor %}
                 <span class="hover:text-primary"
-                      @click="show=!show">{{ lang_name }}</span>
+                      @click="show=!show">{% t site.lang_name %}</span>
                 <i :class="show ? 'fas fa-caret-up' : 'fas fa-caret-down'"></i>
             </div>
             <div class="bg-white absolute left-auto right-0 z-50 block py-2 px-4 shadow-lg rounded w-max space-y-1"
