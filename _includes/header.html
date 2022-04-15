@@ -1,9 +1,12 @@
 <header>
     {% include top.html %}
-    <div class="max-w-7xl mx-auto px-2 py-4">
+    <div class="flex justify-between max-w-7xl mx-auto px-2 py-4 space-x-10">
         <a href="{% tl home %}"><img src="/images/logo.svg"></a>
-        <div>
+        <nav class="hidden md:flex grow space-x-4">
             {% include navigation.html %}
+        </nav>
+        <div>
+
         </div>
     </div>
 </header>

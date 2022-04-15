@@ -9,8 +9,12 @@
 @import "animate.css";
 
 a {
-  @apply text-neutral-500;
-  &:hover {
-    @apply text-primary;
-  }
+    @apply text-neutral-500;
+    &:hover {
+        @apply text-primary;
+    }
+
+    &.active {
+        @apply text-primary;
+    }
 }
