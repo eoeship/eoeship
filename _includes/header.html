@@ -1,21 +1,43 @@
 <header>
     {% include top.html %}
-    <div class="flex justify-between max-w-7xl mx-auto px-2 py-4 space-x-10">
-        <a href="{% tl home %}"><img src="/images/logo.svg"></a>
-        <nav class="hidden md:flex grow space-x-6">
-            {% include navigation.html %}
-        </nav>
-        <div>
-            <form>
-                <div class="relative">
-                    <i class="absolute fas fa-search mt-2 ml-4 text-neutral-400"></i>
-                    <input name="s" type="text" value="" placeholder="{% t search_placeholder %}"
-                           class="h-8 rounded-full pl-10 bg-neutral-50 placeholder-neutral-400 border-2 border-neutral-50 focus:border-primary focus:ring-0">
+    <div class="max-w-7xl mx-auto px-2 mb-4 md:mb-0" x-data="{open:false}">
+        <div class="flex justify-between py-2 md:py-4 space-x-10">
+            <a href="{% tl home %}"><img src="/images/logo.svg"></a>
+            <nav class="hidden md:flex grow space-x-6">
+                {% include navigation.html %}
+            </nav>
+            <div class="hidden md:flex">
+                <form>
+                    <div class="relative">
+                        <i class="absolute fas fa-search mt-2 ml-4 text-neutral-400"></i>
+                        <input name="s" type="text" value="" placeholder="{% t search_placeholder %}"
+                               class="h-8 rounded-full pl-10 bg-neutral-50 placeholder-neutral-400 border-2 border-neutral-50 focus:border-primary focus:ring-0">
+                    </div>
+                </form>
+            </div>
+            <div class="md:hidden">
+                <div @click="open =! open"
+                     class="bg-white rounded-md p-2 inline-flex items-center justify-center text-neutral-600">
+                    <span class="sr-only">{% t menu %}</span>
+                    <i class="fas fa-bars"></i>
                 </div>
-            </form>
+            </div>
         </div>
-        <div class="md:hidden">
-
+        <div x-show="open" class="md:hidden" x-transition @click.away="open = false">
+            <div class="bg-white block py-2 rounded-b shadow-lg w-full border-t-2 border-neutral-200">
+                <nav class="flex flex-col p-4 space-y-1">
+                    {% include navigation.html %}
+                </nav>
+                <div class="px-4 pb-4">
+                    <form>
+                        <div class="relative">
+                            <i class="absolute fas fa-search mt-2 ml-4 text-neutral-400"></i>
+                            <input name="s" type="text" value="" placeholder="{% t search_placeholder %}"
+                                   class="h-8 w-full rounded-full pl-10 bg-neutral-50 placeholder-neutral-400 border-2 border-neutral-50 focus:border-primary focus:ring-0">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </header>
