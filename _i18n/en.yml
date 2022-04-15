@@ -1,7 +1,12 @@
 site:
   lang_name: English
-  home: /
   description:
 
 navigation:
   home: Home
+  services: Services
+  about: About
+  blog: Blog
+  faq: FAQ
+
+powered_by: Powered by
