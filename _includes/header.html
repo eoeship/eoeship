@@ -29,10 +29,11 @@
                     {% include navigation.html %}
                 </nav>
                 <div class="px-4 pb-4">
-                    <form>
+                    <form method="get" action="https://www.google.com/search" target="_blank">
+                        <input type="hidden" name="sitesearch" value="www.eoeship.com"/>
                         <div class="relative">
                             <i class="absolute fas fa-search mt-2 ml-4 text-neutral-400"></i>
-                            <input name="s" type="text" value="" placeholder="{% t search_placeholder %}"
+                            <input name="q" type="text" value="" placeholder="{% t search_placeholder %}"
                                    class="h-8 w-full rounded-full pl-10 bg-neutral-50 placeholder-neutral-400 border-2 border-neutral-50 focus:border-primary focus:ring-0">
                         </div>
                     </form>
