@@ -1,27 +1,24 @@
 site:
   lang_name: English
-  description:
+  description: Description
 
 navigation:
   home: Home
-  services: Services
-  about: About
   blog: Blog
   faq: FAQ
+  about: About
 
 keywords:
   home: Home
-  services: Services
-  about: About
   blog: Blog
   faq: FAQ
+  about: About
 
 description:
   home: Home
-  services: Services
-  about: About
   blog: Blog
   faq: FAQ
+  about: About
 
 menu: Menu
 search: Search
