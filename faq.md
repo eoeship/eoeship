@@ -1,7 +1,8 @@
 ---
-layout: home
-keywords: Air Shipping, Ocen Shipping
-description: Home Page
+layout: page
+title: navigation.faq
+keywords: keywords.faq
+description: description.faq
 namespace: faq
 permalink: /faq
 ---

@@ -1,7 +1,8 @@
 ---
-layout: home
-keywords: Air Shipping, Ocen Shipping
-description: Home Page
+layout: page
+title: navigation.blog
+keywords: keywords.blog
+description: description.blog
 namespace: blog
 permalink: /blog
 ---

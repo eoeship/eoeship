@@ -1,7 +1,5 @@
-<a class="active" href="{% tl home %}">{% t navigation.home %}</a>
-<div>
-    <a href="javascript:void();">{% t navigation.services %}</a>
-</div>
-<a href="{% tl about %}">{% t navigation.about %}</a>
-<a href="{% tl blog %}">{% t navigation.blog %}</a>
-<a href="{% tl faq %}">{% t navigation.faq %}</a>
+<a class="{% if page.namespace == 'home' %}active{% endif %}" href="{% tl home %}">{% t navigation.home %}</a>
+<a class="{% if page.namespace == 'services' %}active{% endif %}" href="{% tl services %}">{% t navigation.services %}</a>
+<a class="{% if page.namespace == 'faq' %}active{% endif %}" href="{% tl faq %}">{% t navigation.faq %}</a>
+<a class="{% if page.namespace == 'blog' %}active{% endif %}" href="{% tl blog %}">{% t navigation.blog %}</a>
+<a class="{% if page.namespace == 'about' %}active{% endif %}" href="{% tl about %}">{% t navigation.about %}</a>
