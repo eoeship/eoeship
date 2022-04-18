@@ -7,22 +7,23 @@ navigation:
   services: 服务列表
   about: 关于我们
   blog: 博客
-  faq: FAQ
+  faq: 常见问题
 
 keywords:
   home: 首页
   services: 服务列表
   about: 关于我们
   blog: 博客
-  faq: FAQ
+  faq: 常见问题
 
 description:
   home: 首页
   services: 服务列表
   about: 关于我们
   blog: 博客
-  faq: FAQ
+  faq: 常见问题
 
 menu: 菜单
+search: 搜索
 search_placeholder: 搜索...
 powered_by: 版本所有

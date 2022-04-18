@@ -4,7 +4,143 @@
 <body>
 {% include header.html %}
 <main>
-    {{ content }}
+    <div class="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto px-2 mb-4 md:mb-0">
+        <div>
+            <h1 class="text-4xl md:text-6xl font-bold text-neutral-800 mt-8 md:mt-20 leading-8">The best chinese <span
+                class="text-primary">freight
+                forwarder.</span></h1>
+            <p class="text-lg text-neutral-400 mt-6 mb-10">You need Air, Sea and Rail freight? Our experts are ready to
+                handle
+                your shipment!</p>
+            <form method="get">
+                <div class="relative md:w-3/4">
+                    <input
+                        class="w-full h-11 rounded border-neutral-100 placeholder-neutral-400 border-2 focus:border-primary focus:ring-0"
+                        type="text" name="s" value="" placeholder="{% t search_placeholder %}">
+                    <button type="submit" class="absolute right-1 px-6 rounded bg-primary text-white h-9 mt-1"><i
+                        class="fas fa-search mr-1"></i>{% t search %}
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="p-8">
+            <img src="/images/banner.svg" alt="" class="w-full">
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-2 mt-14 md:mt-16 mb-4 md:mb-0">
+        <div class="md:w-1/2 mx-auto text-center text-3xl md:text-5xl font-bold text-neutral-800">What shipping methods
+            can we offer
+        </div>
+        <div class="grid md:grid-cols-2 gap-4 md:gap-8 my-10">
+            <div class="flex space-x-4">
+                <div class="flex-none h-10 w-10 rounded text-center bg-blue-50"><i
+                    class="text-xl mt-2 fas fa-plane-arrival text-primary"></i></div>
+                <div>
+                    <h3><a class="text-neutral-800" href="#">Air Delivery</a></h3>
+                    <p class="text-neutral-500">We have partnership with airlines company. We will be able to ship it
+                        worldwide</p>
+                </div>
+            </div>
+            <div class="flex space-x-4">
+                <div class="flex-none h-10 w-10 rounded text-center bg-blue-50"><i
+                    class="text-xl mt-2 fas fa-ship text-primary"></i></div>
+                <div>
+                    <h3><a class="text-neutral-800" href="#">Sea Delivery</a></h3>
+                    <p class="text-neutral-500">We have partnership with airlines company. We will be able to ship it
+                        worldwide</p>
+                </div>
+            </div>
+            <div class="flex space-x-4">
+                <div class="flex-none h-10 w-10 rounded text-center bg-blue-50"><i
+                    class="text-xl mt-2 fas fa-train text-primary"></i></div>
+                <div>
+                    <h3><a class="text-neutral-800" href="#">Train Delivery</a></h3>
+                    <p class="text-neutral-500">We have partnership with airlines company. We will be able to ship it
+                        worldwide</p>
+                </div>
+            </div>
+            <div class="flex space-x-4">
+                <div class="flex-none h-10 w-10 rounded text-center bg-blue-50"><i
+                    class="text-xl mt-2 fas fa-truck text-primary"></i></div>
+                <div>
+                    <h3><a class="text-neutral-800" href="#">Truck Delivery</a></h3>
+                    <p class="text-neutral-500">We have partnership with airlines company. We will be able to ship it
+                        worldwide</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-2 mt-16 mb-4 md:mb-0">
+        <div class="md:w-2/3">
+            <span class="px-2 py-1 rounded-full bg-blue-50 text-primary">Services</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-neutral-800 mt-4">We provide services that you can rely
+                on</h2>
+            <p class="text-neutral-400 my-2">Repellat cum autem consectetur culpa quos mollitia illum qui
+                aspernatur.</p>
+        </div>
+        <div class="grid md:grid-cols-2 mt-6">
+            <div class="grid gap-4">
+                <div class="flex justify-between space-x-4">
+                    <div>
+					<span class="inline-block w-14 h-14 rounded text-center bg-primary shadow"><i
+                        class="fas fa-boxes-stacked text-3xl mt-3 text-white"></i></span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl"><a class="text-neutral-800" href="#">Storage</a></h3>
+                        <p class="text-neutral-400">Voluptate nemo et nobis laudantium nihil
+                            reprehenderit. Et quis omnis sapiente atque aut
+                            sapiente. Ab atque aut quis</p>
+                    </div>
+                </div>
+                <div class="flex justify-between space-x-4">
+                    <div>
+					<span class="inline-block w-14 h-14 rounded text-center bg-primary shadow"><i
+                        class="fas fa-shield-dog text-3xl mt-3 text-white"></i></span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl"><a class="text-neutral-800" href="#">Insurance</a></h3>
+                        <p class="text-neutral-400">Voluptate nemo et nobis laudantium nihil
+                            reprehenderit. Et quis omnis sapiente atque aut
+                            sapiente. Ab atque aut quis</p>
+                    </div>
+                </div>
+                <div class="flex justify-between space-x-4">
+                    <div>
+					<span class="inline-block w-14 h-14 rounded text-center bg-primary shadow"><i
+                        class="fas fa-circle-check text-3xl mt-3 text-white"></i></span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl"><a class="text-neutral-800" href="#">Customs clearance</a></h3>
+                        <p class="text-neutral-400">Voluptate nemo et nobis laudantium nihil
+                            reprehenderit. Et quis omnis sapiente atque aut
+                            sapiente. Ab atque aut quis</p>
+                    </div>
+                </div>
+                <div class="flex justify-between space-x-4">
+                    <div>
+					<span class="inline-block w-14 h-14 rounded text-center bg-primary shadow"><i
+                        class="fas fa-box-archive text-3xl mt-3 text-white"></i></span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl"><a class="text-neutral-800" href="#">Packing service</a></h3>
+                        <p class="text-neutral-400">Voluptate nemo et nobis laudantium nihil
+                            reprehenderit. Et quis omnis sapiente atque aut
+                            sapiente. Ab atque aut quis</p>
+                    </div>
+                </div>
+            </div>
+            <div class="p-8">
+                <img src="/images/services.svg" alt="" class="w-full">
+            </div>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-2 mt-16 mb-4 md:mb-0">
+    </div>
+    <div class="max-w-7xl mx-auto px-2 mt-16 mb-4 md:mb-0">
+    </div>
+    <div>
+
+    </div>
 </main>
 {% include sidebar.html %}
 {% include footer.html %}

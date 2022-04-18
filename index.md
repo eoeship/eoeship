@@ -6,5 +6,3 @@ description: description.home
 namespace: home
 permalink: /
 ---
-
-{{ site.title }}
