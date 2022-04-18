@@ -6,6 +6,7 @@
     "alpinejs": "^3.9.6",
     "animate.css": "^4.1.1",
     "autoprefixer": "^10.4.4",
+    "github-markdown-css": "^5.1.0",
     "laravel-mix": "^6.0.43",
     "postcss": "^8.4.12",
     "postcss-import": "^14.1.0",

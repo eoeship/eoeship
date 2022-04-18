@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+{% include head.html %}
+<body>
+{% include header.html %}
+<main>
+    {% for post in paginator.posts %}
+    <h1>{{ post.title }}</h1>
+    {% endfor %}
+</main>
+{% include sidebar.html %}
+{% include footer.html %}
+</body>
+</html>

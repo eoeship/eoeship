@@ -30,7 +30,7 @@ facebook: eoeship
 instagram: eoeship
 pinterest: eoeship
 youtube: eoeship
-github: eoeship
+github: https://github.com/eoeship
 
 collections:
 
@@ -46,7 +46,7 @@ plugins:
   - jekyll-feed
   - jekyll-multiple-languages-plugin
   - jekyll-sitemap
-
+  - jekyll-paginate-v2
   # Exclude from processing.
   # The following items will not be processed, by default.
   # Any item listed under the `exclude:` key here will be automatically added to
@@ -80,3 +80,33 @@ exclude:
   - .travis.yml
   - .gitignore
   - .editorconfig
+
+autopages:
+  enabled: true
+  categories:
+    layouts:
+      - 'category.html'
+    title: ':cat'
+    permalink: '/category/:cat'
+    silent: false
+    slugify:
+      mode: 'default'
+      case: true
+  collections:
+    layouts:
+      - 'collection.html'
+    title: ':coll'
+    permalink: '/collection/:coll'
+    silent: false
+    slugify:
+      mode: 'default'
+      case: true
+  tag:
+    layouts:
+      - 'tag.html'
+    title: ':tag'
+    permalink: '/tag/:tag'
+    silent: false
+    slugify:
+      mode: 'default'
+      case: true

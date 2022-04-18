@@ -4,7 +4,22 @@
 <body>
 {% include header.html %}
 <main>
-    {{ content }}
+    <div class="max-w-5xl mx-auto px-2 md:px-6 my-8 md:my-16">
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-neutral-800">{{ page.title }}</h1>
+            <p class="text-neutral-500 my-4">5天前</p>
+            <div class="mb-8">
+                <a class="px-2 py-1 text-neutral-700 border border-neutral-200 hover:border-primary rounded-md mr-2"
+                   href="#">空运</a>
+                <a class="px-2 py-1 text-neutral-700 border border-neutral-200 hover:border-primary rounded-md mr-2"
+                   href="#">中国到美国</a>
+            </div>
+            <img src="/images/cover_2_placeholder.svg" alt="" class="w-full rounded">
+        </div>
+        <div class="md:px-20 markdown-body">
+            {{ content }}
+        </div>
+    </div>
 </main>
 {% include sidebar.html %}
 {% include footer.html %}
