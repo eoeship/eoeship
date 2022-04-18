@@ -6,5 +6,3 @@ description: description.about
 namespace: about
 permalink: /about
 ---
-
-About
