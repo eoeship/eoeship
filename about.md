@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: about
 title: navigation.about
 keywords: keywords.about
 description: description.about
