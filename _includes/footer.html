@@ -2,7 +2,7 @@
     {% include gdpr.html %}
     <div class="flex justify-between max-w-7xl mx-auto px-2 py-4 text-center text-neutral-800">
         <div>
-            {% t powered_by %} <a href="{% tl home %}">{{ site.title }}</a>
+            Powered by <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
         </div>
         <div class="space-x-2">
             {% include social.html %}

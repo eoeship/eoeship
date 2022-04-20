@@ -1,7 +1,5 @@
-- code: en
-  name: English
-  url: /
+- name: English
+  url: //www.eoeship.com
 
-- code: zh_CN
-  name: 简体中文
-  url: /zh_CN
+- name: 简体中文
+  url: //cn.eoeship.com

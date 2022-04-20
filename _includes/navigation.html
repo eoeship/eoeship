@@ -1,4 +1,7 @@
-<a class="{% if page.namespace == 'home' %}active{% endif %}" href="{% tl home %}">{% t navigation.home %}</a>
-<a class="{% if page.namespace == 'blog' %}active{% endif %}" href="{% tl blog %}">{% t navigation.blog %}</a>
-<a class="{% if page.namespace == 'faq' %}active{% endif %}" href="{% tl faq %}">{% t navigation.faq %}</a>
-<a class="{% if page.namespace == 'about' %}active{% endif %}" href="{% tl about %}">{% t navigation.about %}</a>
+{% if site.data.navigation %}
+{% for item in site.data.navigation %}
+<a class="{% if page.url == item.url %}active{% endif %}" href="{{ item.url | relative_url }}">
+    {{ item.title }}
+</a>
+{% endfor %}
+{% endif %}

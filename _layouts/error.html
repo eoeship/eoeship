@@ -3,19 +3,19 @@
 {% include head.html %}
 <body>
 <header class="max-w-7xl mx-auto px-2 mb-4 md:mb-0 py-2 md:py-4">
-    <a href="{% tl home %}"><img src="/images/logo.svg" alt=""/></a>
+    <a href="{{ '/' | relative_url }}"><img src="/images/logo.svg" alt=""/></a>
 </header>
 <main class="max-w-7xl mx-auto px-2 py-4">
     <div class="md:w-2/3 mx-auto text-center my-16">
         <img src="{{ page.cover }}" alt="" class="md:w-3/4 mx-auto">
         <p class="text-neutral-700 my-8">{{ content }}</p>
-        <a class="bg-primary px-4 py-2 rounded text-white" href="{% tl home %}">Go back to home</a>
+        <a class="bg-primary px-4 py-2 rounded text-white" href="{{ '/' | relative_url }}">Go back to home</a>
     </div>
 </main>
 <footer class="absolute bottom-0 w-full">
     <div class="max-w-7xl mx-auto px-2 py-2 md:py-4">
         <div class="flex justify-between">
-            <div>{% t powered_by %} <a href="{% tl home %}">{{ site.title }}</a></div>
+            <div>Powered by <a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
             <div class="space-x-2">
                 {% include social.html %}
             </div>

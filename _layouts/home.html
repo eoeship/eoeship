@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang }}">
-{% include page_head.html %}
+{% include head.html %}
 <body>
 {% include header.html %}
 <main>
@@ -13,13 +13,13 @@
                 handle
                 your shipment!</p>
             <form method="get" action="https://www.google.com/search" target="_blank">
-                <input type="hidden" name="sitesearch" value="www.eoeship.com"/>
+                <input type="hidden" name="sitesearch" value="{{ site.domain }}"/>
                 <div class="relative md:w-3/4">
                     <input
                         class="w-full h-11 rounded border-neutral-100 placeholder-neutral-400 border-2 focus:border-primary focus:ring-0"
-                        type="text" name="q" value="" placeholder="{% t search_placeholder %}">
+                        type="text" name="q" value="" placeholder="Search...">
                     <button type="submit" class="absolute right-1 px-6 rounded bg-primary text-white h-9 mt-1"><i
-                        class="fas fa-search mr-1"></i>{% t search %}
+                        class="fas fa-search mr-1"></i>Search
                     </button>
                 </div>
             </form>

@@ -15,8 +15,6 @@ gem "jekyll", "~> 4.2.2"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
-  gem 'jekyll-paginate-v2', '~> 3.0'
-  gem 'jekyll-multiple-languages-plugin'
   gem 'jekyll-sitemap'
 end
 
