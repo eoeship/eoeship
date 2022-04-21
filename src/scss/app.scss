@@ -9,6 +9,10 @@
 @import 'animate.css';
 @import 'github-markdown-css/github-markdown-light';
 
+body {
+    @apply bg-white;
+}
+
 a {
     @apply text-neutral-500;
     &:hover {
