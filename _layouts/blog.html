@@ -12,19 +12,7 @@
     </div>
     <div>
         <div class="grid md:grid-cols-3 gap-4 md:gap-8">
-            {% for post in site.lang.posts %}
-            <div class="border border-neutral-200 rounded-lg">
-                <img class="rounded-t-lg" alt="" src="/images/cover_2_placeholder.svg">
-                <div class="p-4">
-                    <h5 class="text-xl font-bold">
-                        <a href="#" class="text-neutral-800">{{ post.title}}</a>
-                    </h5>
-                    <p class="text-sm text-neutral-700 my-2">Sit fuga voluptatem excepturi consequatur qui quia sed
-                        labore delectus.</p>
-                    <p class="text-neutral-500">November 8, 2021</p>
-                </div>
-            </div>
-            {% endfor %}
+            {{ content }}
         </div>
     </div>
 </main>
