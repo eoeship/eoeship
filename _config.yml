@@ -19,6 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: EOESHIP
+title_separator: "-"
 description: >-
 lang: en
 language: English
@@ -29,14 +30,13 @@ domain: www.eoeship.com
 
 telegram: eoeship
 twitter: eoeship
-facebook: eoeship
+facebook: https://www.facebook.com/eoeship
 instagram: eoeship
 pinterest: eoeship
 youtube: eoeship
 github: https://github.com/eoeship
 
 permalink: /blog/:title:output_ext
-
 paginate: 12
 
 # Build settings
@@ -64,7 +64,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - README.md,
+  - README.md
   - src/
   - package.json
   - package-lock.json
