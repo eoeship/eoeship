@@ -1,0 +1,14 @@
+<div class="border border-neutral-200 rounded-lg">
+    {% if post.cover %}
+    <img class="rounded-t-lg" alt="" src="{{ post.cover }}">
+    {% else %}
+    <img class="rounded-t-lg" alt="" src="/images/cover_2_placeholder.svg">
+    {% endif %}
+    <div class="p-4">
+        <h5 class="text-xl font-bold">
+            <a href="{{ post.url }}" class="text-neutral-800">{{ post.title}}</a>
+        </h5>
+        <p class="text-sm text-neutral-700 my-2">{{ post.summary }}</p>
+        <p class="text-neutral-500">{{ post.date | date: "%b %d, %Y" }}</p>
+    </div>
+</div>

@@ -23,3 +23,19 @@ a {
         @apply text-primary;
     }
 }
+
+.pagination {
+    @apply pt-8;
+    ul {
+        @apply list-none;
+        @apply flex;
+        @apply justify-between;
+        li {
+            @apply px-2;
+            @apply py-1;
+            @apply border;
+            @apply border-neutral-200;
+            @apply rounded;
+        }
+    }
+}
