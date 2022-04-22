@@ -33,42 +33,16 @@
             can we offer
         </div>
         <div class="grid md:grid-cols-2 gap-4 md:gap-8 my-10">
+            {% for method in site.data.home.methods %}
             <div class="flex space-x-4">
                 <div class="flex-none h-10 w-10 rounded text-center bg-blue-50"><i
-                    class="text-xl mt-2 fas fa-plane-arrival text-primary"></i></div>
+                    class="text-xl mt-2 text-primary {{ method.icon }}"></i></div>
                 <div>
-                    <h3><a class="text-neutral-800" href="#">Air Delivery</a></h3>
-                    <p class="text-neutral-500">We have partnership with airlines company. We will be able to ship it
-                        worldwide</p>
+                    <h3><a class="text-neutral-800" href="{{ method.url }}">{{ method.title }}</a></h3>
+                    <p class="text-neutral-500">{{ method.description }}</p>
                 </div>
             </div>
-            <div class="flex space-x-4">
-                <div class="flex-none h-10 w-10 rounded text-center bg-blue-50"><i
-                    class="text-xl mt-2 fas fa-ship text-primary"></i></div>
-                <div>
-                    <h3><a class="text-neutral-800" href="#">Sea Delivery</a></h3>
-                    <p class="text-neutral-500">We have partnership with airlines company. We will be able to ship it
-                        worldwide</p>
-                </div>
-            </div>
-            <div class="flex space-x-4">
-                <div class="flex-none h-10 w-10 rounded text-center bg-blue-50"><i
-                    class="text-xl mt-2 fas fa-train text-primary"></i></div>
-                <div>
-                    <h3><a class="text-neutral-800" href="#">Train Delivery</a></h3>
-                    <p class="text-neutral-500">We have partnership with airlines company. We will be able to ship it
-                        worldwide</p>
-                </div>
-            </div>
-            <div class="flex space-x-4">
-                <div class="flex-none h-10 w-10 rounded text-center bg-blue-50"><i
-                    class="text-xl mt-2 fas fa-truck text-primary"></i></div>
-                <div>
-                    <h3><a class="text-neutral-800" href="#">Truck Delivery</a></h3>
-                    <p class="text-neutral-500">We have partnership with airlines company. We will be able to ship it
-                        worldwide</p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
     <div class="max-w-7xl mx-auto px-4 mt-16 mb-4 md:mb-0">
@@ -81,54 +55,18 @@
         </div>
         <div class="grid md:grid-cols-2 mt-6">
             <div class="grid gap-4">
+                {% for service in site.data.home.services %}
                 <div class="flex justify-between space-x-4">
                     <div>
 					<span class="inline-block w-14 h-14 rounded text-center bg-primary shadow"><i
-                        class="fas fa-boxes-stacked text-3xl mt-3 text-white"></i></span>
+                        class="text-3xl mt-3 text-white {{ service.icon }}"></i></span>
                     </div>
                     <div>
-                        <h3 class="text-xl"><a class="text-neutral-800" href="#">Storage</a></h3>
-                        <p class="text-neutral-400">Voluptate nemo et nobis laudantium nihil
-                            reprehenderit. Et quis omnis sapiente atque aut
-                            sapiente. Ab atque aut quis</p>
+                        <h3 class="text-xl"><a class="text-neutral-800" href="{{ service.url }}">{{ service.title }}</a></h3>
+                        <p class="text-neutral-400">{{ service.description }}</p>
                     </div>
                 </div>
-                <div class="flex justify-between space-x-4">
-                    <div>
-					<span class="inline-block w-14 h-14 rounded text-center bg-primary shadow"><i
-                        class="fas fa-shield-dog text-3xl mt-3 text-white"></i></span>
-                    </div>
-                    <div>
-                        <h3 class="text-xl"><a class="text-neutral-800" href="#">Insurance</a></h3>
-                        <p class="text-neutral-400">Voluptate nemo et nobis laudantium nihil
-                            reprehenderit. Et quis omnis sapiente atque aut
-                            sapiente. Ab atque aut quis</p>
-                    </div>
-                </div>
-                <div class="flex justify-between space-x-4">
-                    <div>
-					<span class="inline-block w-14 h-14 rounded text-center bg-primary shadow"><i
-                        class="fas fa-circle-check text-3xl mt-3 text-white"></i></span>
-                    </div>
-                    <div>
-                        <h3 class="text-xl"><a class="text-neutral-800" href="#">Customs clearance</a></h3>
-                        <p class="text-neutral-400">Voluptate nemo et nobis laudantium nihil
-                            reprehenderit. Et quis omnis sapiente atque aut
-                            sapiente. Ab atque aut quis</p>
-                    </div>
-                </div>
-                <div class="flex justify-between space-x-4">
-                    <div>
-					<span class="inline-block w-14 h-14 rounded text-center bg-primary shadow"><i
-                        class="fas fa-box-archive text-3xl mt-3 text-white"></i></span>
-                    </div>
-                    <div>
-                        <h3 class="text-xl"><a class="text-neutral-800" href="#">Packing service</a></h3>
-                        <p class="text-neutral-400">Voluptate nemo et nobis laudantium nihil
-                            reprehenderit. Et quis omnis sapiente atque aut
-                            sapiente. Ab atque aut quis</p>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
             <div class="p-8">
                 <img src="/images/services.svg" alt="" class="w-full">
@@ -154,12 +92,9 @@
                     across all digital channels.</p>
             </div>
             <div class="grid gap-y-2">
-                <a class="text-neutral-800" href="#">How long does it take to ship my order?</a>
-                <a class="text-neutral-800" href="#">What payment methods do you accept?</a>
-                <a class="text-neutral-800" href="#">What shipping options do you have?</a>
-                <a class="text-neutral-800" href="#">How long does it take to ship my order?</a>
-                <a class="text-neutral-800" href="#">How do I make changes to an existing order?</a>
-                <a class="text-neutral-800" href="#">When will my order arrive?</a>
+                {% for faq in site.data.home.faq %}
+                <a class="text-neutral-800" href="{{ faq.url }}">{{ faq.title}}</a>
+                {% endfor %}
             </div>
         </div>
     </div>

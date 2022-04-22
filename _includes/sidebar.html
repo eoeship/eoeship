@@ -8,42 +8,16 @@
                 </div>
             </div>
             <div class="col-span-2 md:flex justify-between space-y-4 md:space-y-0">
+                {% for menu in site.data.sidebar %}
                 <div>
-                    <h3 class="text-lg">Must Read</h3>
+                    <h3 class="text-lg">{{ menu.title }}</h3>
                     <div class="grid">
-                        <a href="#">Sellers Center</a>
-                        <a href="#">Affiliate program</a>
-                        <a href="#">Sitemap</a>
-                        <a href="#">RSS</a>
+                        {% for link in menu.links %}
+                        <a href="{{ link.url }}">{{ link.title}}</a>
+                        {% endfor %}
                     </div>
                 </div>
-                <div>
-                    <h3 class="text-lg">Special Services</h3>
-                    <div class="grid">
-                        <a href="#">Sellers Center</a>
-                        <a href="#">Affiliate program</a>
-                        <a href="#">Sitemap</a>
-                        <a href="#">RSS</a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-lg">Shipping to</h3>
-                    <div class="grid">
-                        <a href="#">Sellers Center</a>
-                        <a href="#">Affiliate program</a>
-                        <a href="#">Sitemap</a>
-                        <a href="#">RSS</a>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-lg">FAQ</h3>
-                    <div class="grid">
-                        <a href="#">Sellers Center</a>
-                        <a href="#">Affiliate program</a>
-                        <a href="#">Sitemap</a>
-                        <a href="#">RSS</a>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>

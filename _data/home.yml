@@ -1,0 +1,49 @@
+methods:
+  - title: Air Delivery
+    icon: fas fa-plane-arrival
+    url: /blog/welcome
+    description: We have partnership with airlines company. We will be able to ship it worldwide
+  - title: Sea Delivery
+    icon: fas fa-ship
+    url: /blog/welcome
+    description: We have partnership with airlines company. We will be able to ship it worldwide
+  - title: Train Delivery
+    icon: fas fa-train
+    url: /blog/welcome
+    description: We have partnership with airlines company. We will be able to ship it worldwide
+  - title: Truck Delivery
+    icon: fas fa-truck
+    url: /blog/welcome
+    description: We have partnership with airlines company. We will be able to ship it worldwide
+
+services:
+  - title: Storage
+    icon: fas fa-boxes-stacked
+    url: /blog/welcome
+    description: "Voluptate nemo et nobis laudantium nihil reprehenderit. Et quis omnis sapiente atque aut sapiente. Ab atque aut quis"
+  - title: Insurance
+    icon: fas fa-shield-dog
+    url: /blog/welcome
+    description: "Voluptate nemo et nobis laudantium nihil reprehenderit. Et quis omnis sapiente atque aut sapiente. Ab atque aut quis"
+  - title: Customs clearance
+    icon: fas fa-circle-check
+    url: /blog/welcome
+    description: "Voluptate nemo et nobis laudantium nihil reprehenderit. Et quis omnis sapiente atque aut sapiente. Ab atque aut quis"
+  - title: Packing service
+    icon: fas fa-box-archive
+    url: /blog/welcome
+    description: "Voluptate nemo et nobis laudantium nihil reprehenderit. Et quis omnis sapiente atque aut sapiente. Ab atque aut quis"
+
+faq:
+  - title: welcome1
+    url: /blog/welcome1
+  - title: welcome2
+    url: /blog/welcome2
+  - title: welcome3
+    url: /blog/welcome3
+  - title: welcome4
+    url: /blog/welcome4
+  - title: welcome5
+    url: /blog/welcome5
+  - title: welcome6
+    url: /blog/welcome6
