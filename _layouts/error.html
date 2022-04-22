@@ -9,13 +9,13 @@
     <div class="md:w-2/3 mx-auto text-center my-16">
         <img src="{{ page.cover }}" alt="" class="md:w-3/4 mx-auto">
         <p class="text-neutral-700 my-8">{{ content }}</p>
-        <a class="bg-primary px-4 py-2 rounded text-white" href="{{ '/' | relative_url }}">Go back to home</a>
+        <a class="bg-primary px-4 py-2 rounded text-white" href="{{ '/' | relative_url }}">{{ site.data.local.go_back_to_home }}</a>
     </div>
 </main>
 <footer class="absolute bottom-0 w-full">
     <div class="max-w-7xl mx-auto p-4">
         <div class="flex justify-between">
-            <div>Powered by <a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
+            <div>{{ site.data.local.powered_by }} <a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
             <div class="space-x-2">
                 {% include social.html %}
             </div>

@@ -6,20 +6,16 @@
 <main>
     <div class="grid md:grid-cols-2 gap-8 max-w-7xl mx-auto px-4 mb-4 md:mb-0">
         <div>
-            <h1 class="text-4xl md:text-6xl font-bold text-neutral-800 mt-8 md:mt-20 leading-8">The best chinese <span
-                class="text-primary">freight
-                forwarder.</span></h1>
-            <p class="text-lg text-neutral-400 mt-6 mb-10">You need Air, Sea and Rail freight? Our experts are ready to
-                handle
-                your shipment!</p>
+            <h1 class="text-4xl md:text-6xl font-bold text-neutral-800 mt-8 md:mt-20 leading-8">{{ site.data.local.home_title_1 }}</h1>
+            <p class="text-lg text-neutral-400 mt-6 mb-10">{{ site.data.local.home_description_1 }}</p>
             <form method="get" action="https://www.google.com/search" target="_blank">
                 <input type="hidden" name="sitesearch" value="{{ site.domain }}"/>
                 <div class="relative md:w-3/4">
                     <input
                         class="w-full h-11 rounded border-neutral-100 placeholder-neutral-400 border-2 focus:border-primary focus:ring-0"
-                        type="text" name="q" value="" placeholder="Search...">
+                        type="text" name="q" value="" placeholder="{{ site.data.local.search_placeholder }}">
                     <button type="submit" class="absolute right-1 px-6 rounded bg-primary text-white h-9 mt-1"><i
-                        class="fas fa-search mr-1"></i>Search
+                        class="fas fa-search mr-1"></i>{{ site.data.local.search }}
                     </button>
                 </div>
             </form>
@@ -29,9 +25,7 @@
         </div>
     </div>
     <div class="max-w-7xl mx-auto px-4 mt-14 md:mt-16 mb-4 md:mb-0">
-        <div class="md:w-1/2 mx-auto text-center text-3xl md:text-5xl font-bold text-neutral-800">What shipping methods
-            can we offer
-        </div>
+        <div class="md:w-1/2 mx-auto text-center text-3xl md:text-5xl font-bold text-neutral-800">{{ site.data.local.home_title_2 }}</div>
         <div class="grid md:grid-cols-2 gap-4 md:gap-8 my-10">
             {% for method in site.data.home.methods %}
             <div class="flex space-x-4">
@@ -47,11 +41,9 @@
     </div>
     <div class="max-w-7xl mx-auto px-4 mt-16 mb-4 md:mb-0">
         <div class="md:w-2/3">
-            <span class="px-2 py-1 text-sm rounded-full bg-blue-50 text-primary">Services</span>
-            <h2 class="text-3xl md:text-5xl font-bold text-neutral-800 mt-4">We provide services that you can rely
-                on</h2>
-            <p class="text-neutral-400 my-2">Repellat cum autem consectetur culpa quos mollitia illum qui
-                aspernatur.</p>
+            <span class="px-2 py-1 text-sm rounded-full bg-blue-50 text-primary">{{ site.data.local.services }}</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-neutral-800 mt-4">{{ site.data.local.home_title_3 }}</h2>
+            <p class="text-neutral-400 my-2">{{ site.data.local.home_description_2 }}</p>
         </div>
         <div class="grid md:grid-cols-2 mt-6">
             <div class="grid gap-4">
@@ -62,7 +54,8 @@
                         class="text-3xl mt-3 text-white {{ service.icon }}"></i></span>
                     </div>
                     <div>
-                        <h3 class="text-xl"><a class="text-neutral-800" href="{{ service.url }}">{{ service.title }}</a></h3>
+                        <h3 class="text-xl"><a class="text-neutral-800" href="{{ service.url }}">{{ service.title }}</a>
+                        </h3>
                         <p class="text-neutral-400">{{ service.description }}</p>
                     </div>
                 </div>
@@ -74,7 +67,7 @@
         </div>
     </div>
     <div class="max-w-7xl mx-auto px-4 mt-16 mb-4 md:mb-0">
-        <h3 class="text-3xl md:text-5xl font-bold text-neutral-800">Our latest experiences
+        <h3 class="text-3xl md:text-5xl font-bold text-neutral-800">{{ site.data.local.home_title_4 }}
         </h3>
         <div class="grid md:grid-cols-3 gap-4 md:gap-8 mt-8">
             {% for post in site.posts limit:3 %}
@@ -85,11 +78,9 @@
     <div class="max-w-7xl mx-auto px-4 my-16">
         <div class="grid md:grid-cols-2 gap-4 md:gap-8">
             <div class="md:w-3/4 mx-auto">
-                <span class="px-2 py-1 text-sm rounded-full bg-blue-50 text-primary">FAQ</span>
-                <h3 class="text-3xl md:text-5xl font-bold text-neutral-800 my-4">Frequently Asked Questions</h3>
-                <p class="text-neutral-500">Flex is the only saas business platform that lets you run your business on
-                    one platform, seamlessly
-                    across all digital channels.</p>
+                <span class="px-2 py-1 text-sm rounded-full bg-blue-50 text-primary">{{ site.data.local.faq }}</span>
+                <h3 class="text-3xl md:text-5xl font-bold text-neutral-800 my-4">{{ site.data.local.home_title_5 }}</h3>
+                <p class="text-neutral-500">{{ site.data.local.home_description_3 }}</p>
             </div>
             <div class="grid gap-y-2">
                 {% for faq in site.data.home.faq %}
