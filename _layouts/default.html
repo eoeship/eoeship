@@ -14,6 +14,10 @@
             <img class="w-full rounded" alt="" src="/images/cover_2_placeholder.svg">
             {% endif %}
         </div>
+        <div class="md:px-20 mb-4">
+            <h2 class="text-lg">Table of Contents</h2>
+            {% include toc.html html=content %}
+        </div>
         <div class="md:px-20 markdown-body">
             {{ content }}
         </div>
